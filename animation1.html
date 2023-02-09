@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+
+    function changepicDown()
+    {
+     document.getElementById("demo").style.top=600 + "px";  
+    }
+    function changepicLeft()
+    {
+     document.getElementById("demo").style.left=-400 + "px";  
+    } 
+    function changepicRight()
+    {
+     document.getElementById("demo").style.right=600 + "px";  
+    } 
+    function changepicUp()
+    {
+     document.getElementById("demo").style.bottom=600 + "px";  
+    } 
+    function changepicDR()
+    {
+        
+        document.getElementById("demo").style.top=600 + "px";  
+        document.getElementById("demo").style.left=700 + "px";
+    } 
+    function changepicDL()
+    {
+        document.getElementById("demo").style.top=600 + "px";  
+        document.getElementById("demo").style.left=0+ "px";  
+    } 
+
+ 
+</script>
+  
+
+<body>
+    <button type="button" onclick="changepicDown()">Move Down</button>
+    <button type="button" onclick="changepicLeft()">Move Left</button>
+    <button type="button" onclick="changepicRight()">Move Right</button>
+    <button type="button" onclick="changepicUp()">Move Up</button>
+    <button type="button" onclick="changepicDR()">Move Diagonally Right</button>
+    <button type="button" onclick="changepicDL()">Move Diagonally Left</button>
+
+    <div>
+    <img id="demo" src="https://img.freepik.com/free-vector/modern-blue-urban-adventure-suv-vehicle-illustration_1344-205.jpg"  style="position:absolute; align-items: center;"/>
+    </div>
+   
+
+</body>
+</html>
+
